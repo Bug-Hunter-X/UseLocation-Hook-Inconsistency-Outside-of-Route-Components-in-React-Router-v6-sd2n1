@@ -1,0 +1,1 @@
+In React Router Dom v6, using the `useLocation` hook inside a component that's *not* directly nested within a route can lead to unexpected behavior.  The location might not update correctly, especially if the component is conditionally rendered or deeply nested within other components that aren't involved in routing.

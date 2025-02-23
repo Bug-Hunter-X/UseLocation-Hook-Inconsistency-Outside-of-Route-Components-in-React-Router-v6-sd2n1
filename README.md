@@ -1,0 +1,3 @@
+# React Router v6 useLocation Hook Issue
+
+This repository demonstrates a subtle bug related to the `useLocation` hook in React Router v6.  The problem arises when using `useLocation` in a component that isn't a direct child of a route component. In such cases, the location object might not update correctly, leading to stale UI updates.  The solution involves wrapping the component in a `useLocation` context consumer or passing the location down via props.
